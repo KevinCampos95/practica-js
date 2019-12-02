@@ -1,0 +1,70 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background: lightblue;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.contenedor-form{
+	background: rgba(0,0,0,.7);
+	border-radius: 5px;
+	color: #fff;
+	font-family: Roboto;
+	margin: 25px auto;
+	max-width: 500px;
+	padding: -25px;
+}
+
+.contenedor-form h2{
+	font-size: 20px;
+	line-height: 1;
+	margin: 0 0 28px 0;
+}
+
+.contenedor-form input[type="text"], input[type="password"]{
+	background: rgba(0,0,0,.5);
+	border: none;
+	border-bottom: 4px solid white;
+	border-radius: 2px;
+	color: #fff;
+	display: block;
+	font-family: Roboto;
+	font-style: 14px;
+	font-weight: normal;
+	margin: 0px 0px 20px 0px;
+	outline: none;
+	padding: 10px 15px;
+	transition: all .5s ease;
+	width: 100%;
+}
+
+.contenedor-form input[type="text"], input[type="password"]:focus{
+	border-bottom: 4px solid #00C919;
+}
+
+.contenedor-form input[type="submit"]{
+	background: #ff851b;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	transition: all .1s ease;
+	width: 100%;
+}
+
+.contenedor-form input[type="submit"]:focus{
+	background: rgba(0,117,217,0.70)
+}
+
+.contenedor-form .formulario {
+	padding: 40px;
+}
