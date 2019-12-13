@@ -1,6 +1,6 @@
 const controller = {};
 
-controller.getUsuario = (req, res) =>{
+controller.list = (req, res) =>{
 	req.getConnection((err, conn) =>{
 		conn.query('SELECT * FROM users',(err, users) =>{
 			if (err){
@@ -10,6 +10,15 @@ controller.getUsuario = (req, res) =>{
 			res.render('users',{
 				data: users
 			})
+		})
+	})
+}
+
+controller.getUsuario = (req, res) =>{
+	const data = req.body;
+	req.getConnection((err, conn) =>{
+		conn.query('SELECT ? FROM users',(err, users) =>{
+			
 		})
 	})
 }
